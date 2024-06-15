@@ -1,36 +1,35 @@
 import { StyleSheet } from "react-native";
-import { Height, Width } from "../../utils/Dimensions";
-
+import { Height, Width } from "../../utils/Dimentions";
+import AppColor from "../../utils/AppCollors";
 const styles = StyleSheet.create({
   parentView: {
     flex: 1,
+    backgroundColor: "#fff",
   },
-  contentView: {
-    position: "absolute",
-    bottom: Height(5),
+  img: {
     width: Width(100),
-    alignItems: "center",
+    height: Height(53),
+    resizeMode: "contain",
   },
   textView: {
-    width: Width(90),
     alignItems: "center",
+    marginTop: Height(8),
   },
-  titleText: {
-    marginVertical: Height(2),
+  title: {
+    width: Width(74),
+    fontSize: 26,
+    textAlign: "center",
+    fontWeight: "800",
+  },
+  des: {
+    marginTop: Height(2),
+    width: Width(74),
     fontSize: 20,
-    fontWeight: "900",
     textAlign: "center",
-    width: Width(60),
+    color: "grey",
   },
-  desText: {
-    fontSize: 16,
-    fontWeight: "300",
-    textAlign: "center",
-    width: Width(60),
-  },
-  btn: {
-    marginTop: Height(10),
-    elevation: 5,
+  btnView: {
+    marginTop: Height(7),
   },
 });
 

@@ -1,31 +1,29 @@
-import { View, Text, ImageBackground } from "react-native";
 import React from "react";
+import { View, Text, Image } from "react-native";
 import styles from "./styles";
-import CustomButton from "../component/customBtn";
+import Button from "../../Components/CustomButton";
+import { Height } from "../../utils/Dimentions";
 
 export default function GetStarted() {
   return (
-    <ImageBackground
-      source={require("../../../assets/bg1.jpg")}
-      style={styles.parentView}
-      resizeMode="stretch"
-    >
-      <View style={styles.contentView}>
-        <View style={styles.textView}>
-          <Text style={styles.titleText}>
-            Find your best outfit and looks great
-          </Text>
-          <Text style={styles.desText}>
-            Find wide variety of latest clothing styles only here.And define
-            your style
-          </Text>
-        </View>
-        <CustomButton
-          text="Get Started"
-          onPress={() => {}}
-          style={styles.btn}
+    <View style={styles.parentView}>
+      <Image
+        source={require("./../../../assets/Artboard_1.png")}
+        style={styles.img}
+      />
+      <View style={styles.textView}>
+        <Text style={styles.title}>Find your best outfit and looks great</Text>
+        <Text style={styles.des}>
+          Find wide variety of latest clothing styles only here.And define your
+          style
+        </Text>
+
+        <Button
+          onpress={() => console.log("btn Press of getStart")}
+          style={styles.btnView}
+          label="Get Started"
         />
       </View>
-    </ImageBackground>
+    </View>
   );
 }
