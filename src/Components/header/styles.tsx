@@ -4,7 +4,8 @@ import AppColor from "../../utils/AppCollors";
 
 const styles = StyleSheet.create({
   parentView: {
-    flex: 1,
+    width: Width(100),
+    height: Height(7),
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: Height(1),
