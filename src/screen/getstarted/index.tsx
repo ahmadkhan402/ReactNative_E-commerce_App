@@ -3,8 +3,11 @@ import { View, Text, Image } from "react-native";
 import styles from "./styles";
 import Button from "../../Components/CustomButton";
 import { Height } from "../../utils/Dimentions";
+import { useNavigation } from "@react-navigation/native";
+import { ScreenName } from "../../route/Routes";
 
 export default function GetStarted() {
+  const navigation = useNavigation();
   return (
     <View style={styles.parentView}>
       <Image
@@ -19,7 +22,7 @@ export default function GetStarted() {
         </Text>
 
         <Button
-          onpress={() => console.log("btn Press of getStart")}
+          onpress={() => navigation.navigate(ScreenName.Home)}
           style={styles.btnView}
           label="Get Started"
         />

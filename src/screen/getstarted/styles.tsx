@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
   },
   img: {
     width: Width(100),
-    height: Height(53),
-    resizeMode: "contain",
+    height: Height(58),
+    resizeMode: "stretch",
   },
   textView: {
     alignItems: "center",
-    marginTop: Height(8),
+    marginTop: Height(5),
   },
   title: {
     width: Width(74),
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     color: "grey",
   },
   btnView: {
-    marginTop: Height(7),
+    marginTop: Height(5),
   },
 });
 
