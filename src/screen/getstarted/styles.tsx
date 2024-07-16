@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     color: "grey",
   },
   btnView: {
-    marginTop: Height(5),
+    marginTop: Height(4),
   },
 });
 
