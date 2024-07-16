@@ -4,27 +4,30 @@ import AppColor from "../../utils/AppCollors";
 
 const styles = StyleSheet.create({
   container: {
-    width: Width(100),
+    marginVertical: Height(5),
+    width: Width(90),
     height: Height(30),
+    alignItems: "center",
+    justifyContent: "center",
+    alignSelf: "center",
   },
   wrapper: {},
   slide1: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#9DD6EB",
   },
   slide2: {
     flex: 1,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#97CAE5",
   },
   slide3: {
     flex: 1,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#92BBD9",
   },
   text: {
     color: "#fff",
@@ -32,9 +35,21 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   img: {
-    width: Width(100),
+    borderRadius: 20,
+    width: Width(90),
     height: Height(30),
     resizeMode: "cover",
+  },
+  buyBtn: {
+    position: "absolute",
+    width: Width(28),
+    height: Height(5),
+    backgroundColor: AppColor.offwhite,
+    bottom: 25,
+    left: 25,
+  },
+  txtStyle: {
+    color: AppColor.primery,
   },
 });
 export default styles;
