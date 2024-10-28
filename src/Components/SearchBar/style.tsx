@@ -5,7 +5,7 @@ import AppColor from "../../utils/AppCollors";
 const styles = StyleSheet.create({
   parentView: {
     width: Width(90),
-    height: Height(10),
+    height: Height(8),
     flexDirection: "row",
     backgroundColor: AppColor.lightgrey,
     alignItems: "center",

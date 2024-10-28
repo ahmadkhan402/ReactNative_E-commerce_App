@@ -48,7 +48,9 @@ export default function ImgSwiper() {
         </View>
         <View style={styles.slide2}>
           <Image
-            source={require("./../../assets/images/SwiperImg2.png")}
+            source={{
+              uri: "https://img.freepik.com/premium-photo/shopping-fashion-woman-with-luxury-boutique-client-with-wealth-style-clothes-selection-female-person-customer-shopper-store-outfit-choice-buying-with-discount-retail_590464-188816.jpg?w=900",
+            }}
             style={styles.img}
           />
           <Button
@@ -62,7 +64,9 @@ export default function ImgSwiper() {
         </View>
         <View style={styles.slide3}>
           <Image
-            source={require("./../../assets/images/SwiperImg3.png")}
+            source={{
+              uri: "https://img.freepik.com/free-photo/beautilful-young-woman-carrying-shopping-bags-with-credit-card-isolated-white-background_231208-1852.jpg?t=st=1729269349~exp=1729272949~hmac=3f4f0801c2c80036a4ed276f21d2e0ab9f495d6079e95204b844a97fb3a2b497&w=900",
+            }}
             style={styles.img}
           />
           <Button

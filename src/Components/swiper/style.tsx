@@ -4,7 +4,7 @@ import AppColor from "../../utils/AppCollors";
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: Height(5),
+    marginVertical: Height(3),
     width: Width(90),
     height: Height(30),
     alignItems: "center",
